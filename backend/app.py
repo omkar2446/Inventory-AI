@@ -1,14 +1,14 @@
 from flask import Flask, jsonify
-from config import Config
-from models import db
+from .config import Config
+from .models import db
 from flask_jwt_extended import JWTManager
 from flask_cors import CORS
 
 # blueprints
-from routes.auth import auth_bp
-from routes.products import products_bp
-from routes.alerts import alerts_bp
-from routes.dashboard import dashboard_bp
+from .routes.auth import auth_bp
+from .routes.products import products_bp
+from .routes.alerts import alerts_bp
+from .routes.dashboard import dashboard_bp
 
 # agents
 from agents import demand_forecast, stock_monitor, supply_analysis, price_optimization
