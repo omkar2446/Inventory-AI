@@ -1,6 +1,6 @@
-from ..models.product import Product
-from ..models.agent_suggestion import AgentSuggestion
-from ..models import db
+from models.product import Product
+from models.agent_suggestion import AgentSuggestion
+from models import db
 from datetime import date, timedelta
 
 

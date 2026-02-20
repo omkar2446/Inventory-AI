@@ -1,5 +1,5 @@
 from datetime import datetime
-from . import db
+from models import db
 
 class InventoryLog(db.Model):
     __tablename__ = 'inventory_logs'
