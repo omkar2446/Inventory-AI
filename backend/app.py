@@ -1,17 +1,19 @@
 from flask import Flask, jsonify
 from config import Config
-from models import db
+from flask import Flask, jsonify
+from backend.config import Config
+from backend.models import db
 from flask_jwt_extended import JWTManager
 from flask_cors import CORS
 
 # blueprints
-from routes.auth import auth_bp
-from routes.products import products_bp
-from routes.alerts import alerts_bp
-from routes.dashboard import dashboard_bp
+from backend.routes.auth import auth_bp
+from backend.routes.products import products_bp
+from backend.routes.alerts import alerts_bp
+from backend.routes.dashboard import dashboard_bp
 
 # agents
-from agents import demand_forecast, stock_monitor, supply_analysis, price_optimization
+from backend.agents import demand_forecast, stock_monitor, supply_analysis, price_optimization
 
 from apscheduler.schedulers.background import BackgroundScheduler
 import atexit
