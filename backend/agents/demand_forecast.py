@@ -1,7 +1,7 @@
-from backend.models.product import Product
-from backend.models.agent_suggestion import AgentSuggestion
-from backend.models.inventory_log import InventoryLog
-from backend.models import db
+from models.product import Product
+from models.agent_suggestion import AgentSuggestion
+from models.inventory_log import InventoryLog
+from models import db
 from sqlalchemy import func
 
 

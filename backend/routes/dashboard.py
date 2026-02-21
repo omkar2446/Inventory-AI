@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify
-from backend.models.product import Product
-from backend.models.agent_suggestion import AgentSuggestion
+from models.product import Product
+from models.agent_suggestion import AgentSuggestion
 from datetime import date, timedelta
 
 dashboard_bp = Blueprint('dashboard', __name__, url_prefix='/api/dashboard')

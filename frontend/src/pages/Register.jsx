@@ -17,7 +17,7 @@ export default function Register(){
 
     try{
       await axios.post(
-        "http://localhost:5000/api/auth/register",
+        "https://inven-ai-backend-3.onrender.com/api/auth/register",
         form
       )
 

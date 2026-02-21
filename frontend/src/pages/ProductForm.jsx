@@ -28,7 +28,7 @@ export default function ProductForm() {
       setLoading(true);
       setMessage("");
 
-      await axios.post("http://localhost:5000/api/products/", {
+      await axios.post("https://inven-ai-backend-3.onrender.com/api/products/", {
         ...form,
         price: Number(form.price),
         quantity: Number(form.quantity),

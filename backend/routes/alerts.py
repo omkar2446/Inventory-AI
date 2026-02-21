@@ -1,6 +1,6 @@
 from flask import Blueprint, jsonify
-from backend.models.agent_suggestion import AgentSuggestion
-from backend.models.product import Product
+from models.agent_suggestion import AgentSuggestion
+from models.product import Product
 
 alerts_bp = Blueprint('alerts', __name__, url_prefix='/api/alerts')
 

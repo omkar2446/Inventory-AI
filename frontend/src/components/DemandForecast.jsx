@@ -7,7 +7,7 @@ const [data,setData]=useState([])
 
 useEffect(()=>{
 
-axios.get("http://localhost:5000/api/alerts")
+axios.get("https://inven-ai-backend-3.onrender.com/api/alerts")
 .then(r=>{
 
 const demand=r.data.filter(

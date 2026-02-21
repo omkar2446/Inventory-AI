@@ -1,9 +1,9 @@
 from flask import Blueprint, request, jsonify
 from flask_jwt_extended import get_jwt_identity
-from backend.models.product import Product
-from backend.models.inventory_log import InventoryLog
-from backend.models import db
-from backend.utils.helpers import parse_date
+from models.product import Product
+from models.inventory_log import InventoryLog
+from models import db
+from utils.helpers import parse_date
 
 products_bp = Blueprint('products', __name__, url_prefix='/api/products')
 

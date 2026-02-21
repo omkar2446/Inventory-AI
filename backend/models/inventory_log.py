@@ -1,5 +1,5 @@
 from datetime import datetime
-from backend.models import db
+from models import db
 
 class InventoryLog(db.Model):
     __tablename__ = 'inventory_logs'

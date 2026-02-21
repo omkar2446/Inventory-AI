@@ -1,6 +1,6 @@
-from backend.models.product import Product
-from backend.models.agent_suggestion import AgentSuggestion
-from backend.models import db
+from models.product import Product
+from models.agent_suggestion import AgentSuggestion
+from models import db
 
 
 def run():

@@ -7,7 +7,7 @@ const [open,setOpen]=useState(false)
 const [notifications,setNotifications]=useState([])
 
 useEffect(()=>{
-axios.get("http://localhost:5000/api/dashboard/stats")
+axios.get("https://inven-ai-backend-3.onrender.com/api/dashboard/stats")
 .then(r=>{
 setNotifications(r.data.recent_suggestions||[])
 })
