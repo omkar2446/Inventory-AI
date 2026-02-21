@@ -1,5 +1,5 @@
 from datetime import datetime
-from models import db
+from backend.models import db
 
 class AgentSuggestion(db.Model):
     __tablename__ = 'agent_suggestions'

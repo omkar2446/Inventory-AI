@@ -1,6 +1,4 @@
 from flask import Flask, jsonify
-from config import Config
-from flask import Flask, jsonify
 from backend.config import Config
 from backend.models import db
 from flask_jwt_extended import JWTManager

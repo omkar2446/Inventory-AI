@@ -1,6 +1,6 @@
 from app import create_app
-from models import db
-from models.product import Product
+from backend.models import db
+from backend.models.product import Product
 
 app = create_app()
 
