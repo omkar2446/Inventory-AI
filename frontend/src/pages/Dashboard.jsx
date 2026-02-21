@@ -16,8 +16,8 @@ const [loading,setLoading]=useState(true)
 const load=async()=>{
 try{
 const [s,p]=await Promise.all([
-axios.get("http://localhost:5000/api/dashboard/stats"),
-axios.get("http://localhost:5000/api/products/")
+axios.get("https://inven-ai-backend-3.onrender.com/api/dashboard/stats"),
+axios.get("https://inven-ai-backend-3.onrender.com/api/products/")
 ])
 
 setStats(s.data)
